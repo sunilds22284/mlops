@@ -1,0 +1,27 @@
+name: loan_approval_feature_pipeline
+
+on:
+  label:
+    types: created
+
+jobs:
+  loan_approval_fp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+          working-directory: ./hopswork-test/
+          
+      - name: install python packages
+        run:
+          pip install -r requirements.txt
+          
+      - name: execute Feature Pipeline
+        env: 
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+        run: python ./hopswork-test/la_feature_pipeline.py
