@@ -3,7 +3,7 @@ matplotlib
 pandas
 numpy
 seaborn
-sklearn
+scikit-learn
 hopsworks
 hsml
 hsfs[python]
