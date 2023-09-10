@@ -23,5 +23,5 @@ jobs:
           
       - name: execute Feature Pipeline
         env: 
-          HOPSWORKS_API_KEY: "APqZwJyAauSDgYQt.PYLtOKvtywILrLTsy9NicPM2WxRRL7Q7ZKw2Oh4cMpDGaWKfRRvf9mPapvL7d0AK"
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: python ./la_feature_pipeline.py
