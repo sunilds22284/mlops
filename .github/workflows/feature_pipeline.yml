@@ -1,8 +1,6 @@
 name: loan_approval_feature_pipeline
 
-on:
-  label:
-    types: created
+on: workflow_dispatch
 
 jobs:
   loan_approval_fp:
