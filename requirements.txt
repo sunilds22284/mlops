@@ -4,7 +4,7 @@ pandas
 numpy
 seaborn
 sklearn
-hopswork
+hopsworks
 hsml
 hsfs[python]
 python-dotenv
