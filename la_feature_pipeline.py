@@ -102,9 +102,9 @@ project = hopsworks.login()
 fs = project.get_feature_store()
 
 loan_fg = fs.get_or_create_feature_group(
-    name="loan_approval",
-    version=2,
-    description="Loan approval FG2",
+    name="loan_approval_git",
+    version=1,
+    description="Loan approval FG_git",
     primary_key=["Loan_ID"],
     event_time= None,
     online_enabled=True
@@ -122,22 +122,4 @@ concat_encoded_df.rename(columns={'education_not graduate':'education_not_gradua
 concat_encoded_df.head()
 
 loan_fg.insert(concat_encoded_df)
-
-feature_descriptions = [
-    {"name": "loan_id", "description": "Loan id"},
-    {"name": "gender", "description": "Gender"},
-    {"name": "married", "description": "Person is married or single"},
-    {"name": "dependents", "description": "No. of dependents a person have"},
-    {"name": "education", "description": "Person is graduate or not"},
-    {"name": "self_employed", "description": "Self employed or salaried"},
-    {"name": "applicantincome", "description": "Applicant Income"},
-    {"name": "coapplicantincome", "description": "Co Applicant Income"},
-    {"name": "loanamount", "description": "Amount of loan taken"},
-    {"name": "loan_amount_term", "description": "Term of loan amount"},
-    {"name": "credit_history", "description": "Person have credit history or not"},
-    {"name": "property_area", "description": "Property is located in Urban/Semi-urban/Rural area"},
-    ]
-
-for desc in feature_descriptions:
-    loan_fg.update_feature_description(desc["name"], desc["description"])
 
