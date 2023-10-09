@@ -24,6 +24,10 @@ import hopsworks
 project = hopsworks.login ()
 #fs = project.get_feature_store()
 
+loan_fg = fs.get_or_create_feature_group(
+    name="loan_approval",
+    version=2)
+
 query = loan_fg.select(['loanamount', 'loan_amount_term', 'credit_history',
        'totalincome', 'emi', 'balanceincome', 'married_yes',
        'education_not_graduate', 'property_area_semiurban',
