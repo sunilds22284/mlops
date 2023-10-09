@@ -20,8 +20,6 @@ uploaded_file_path = dataset_api.upload("predictor.py", "Models", overwrite=True
 predictor_script_path = os.path.join("/Projects", project.name, uploaded_file_path)
 
 my_predictor = ms.create_predictor(my_model,
-                                   # optional
-                                   model_server="PYTHON",
                                    serving_tool="KSERVE",
                                    script_file=predictor_script_path
                                    )
