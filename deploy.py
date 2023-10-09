@@ -26,7 +26,12 @@ my_predictor = ms.create_predictor(my_model,
 
 #my_deployment = my_predictor.deploy()
 my_deployment = ms.create_deployment(my_predictor)
-my_deployment.save()
+
+
+#ms = project.get_model_serving()
+
+#my_predictor = ms.create_predictor(my_model)
+#my_deployment = my_predictor.deploy()
 
 
 
