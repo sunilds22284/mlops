@@ -26,3 +26,8 @@ jobs:
         env: 
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: python ./la_training_pipeline.py
+
+      - name: execute deployment
+        env: 
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+        run: python ./deploy.py
