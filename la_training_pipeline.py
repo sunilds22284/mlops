@@ -19,8 +19,9 @@ import pandas as pd
 import hsfs
 from hsml.schema import Schema
 from hsml.model_schema import ModelSchema
+from matplotlib import pyplot
+import matplotlib.pyplot as plt
 
-import hopsworks
 project = hopsworks.login ()
 fs = project.get_feature_store()
 
