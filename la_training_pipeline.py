@@ -22,7 +22,7 @@ from hsml.model_schema import ModelSchema
 
 import hopsworks
 project = hopsworks.login ()
-#fs = project.get_feature_store()
+fs = project.get_feature_store()
 
 loan_fg = fs.get_or_create_feature_group(
     name="loan_approval",
