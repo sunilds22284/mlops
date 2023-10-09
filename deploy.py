@@ -24,7 +24,9 @@ my_predictor = ms.create_predictor(my_model,
                                    script_file=predictor_script_path
                                    )
 
-my_deployment = my_predictor.deploy()
+#my_deployment = my_predictor.deploy()
+my_deployment = ms.create_deployment(my_predictor)
+my_deployment.save()
 
 
 
