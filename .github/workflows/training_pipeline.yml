@@ -1,10 +1,9 @@
 name: loan_approval_training_pipeline
 
-on: 
-  workflow_run:
-    workflows: ["loan_approval_feature_pipeline"]
-    types:
-      - completed
+on: workflow_dispatch
+defaults:
+  run:
+    working-directory: ./
 
 jobs:
   loan_approval:
