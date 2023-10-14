@@ -9,7 +9,7 @@ project = hopsworks.login()
 # get Hopsworks Model Registry handle
 mr = project.get_model_registry()
 
-my_model = mr.get_model("loan_approval_v3", version=1)
+la_model = mr.get_model("loan_approval_v3", version=1)
 
 # get Hopsworks Model Serving handle
 ms = project.get_model_serving()
@@ -19,19 +19,12 @@ dataset_api = project.get_dataset_api()
 uploaded_file_path = dataset_api.upload("predictor.py", "Models", overwrite=True)
 predictor_script_path = os.path.join("/Projects", project.name, uploaded_file_path)
 
-my_predictor = ms.create_predictor(my_model,
-                                   serving_tool="KSERVE",
-                                   script_file=predictor_script_path
-                                   )
+deployment_name = "loan_approval_v3"
+my_deployment = la_model.deploy(name=deployment_name,
+                                description="Deployment which can do loan approval prediction",
+                                script_file=predictor_script_path,
+                                resources={"num_instances": 0})
 
-#my_deployment = my_predictor.deploy()
-#my_deployment = ms.create_deployment(my_predictor)
-
-
-#ms = project.get_model_serving()
-
-#my_predictor = ms.create_predictor(my_model)
-my_deployment = my_predictor.deploy()
 
 
 
