@@ -14,6 +14,11 @@ my_model = mr.get_model("loan_approval_v3", version=1)
 # get Hopsworks Model Serving handle
 ms = project.get_model_serving()
 
+#delete existing deployments
+list_of_deployments = ms.get_deployments()
+for i in list_of_deployments:
+	i.delete(force=True)
+
 dataset_api = project.get_dataset_api()
 
 uploaded_file_path = dataset_api.upload("./predictor.py", "Models", overwrite=True)
