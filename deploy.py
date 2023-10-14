@@ -24,6 +24,8 @@ my_deployment = la_model.deploy(name=deployment_name,
                                 description="Deployment which can do loan approval prediction",
                                 script_file=predictor_script_path,
                                 resources={"num_instances": 0})
+my_deployment.start()
+
 
 
 
