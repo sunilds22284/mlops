@@ -1,0 +1,27 @@
+name: loan_approval_inference
+
+on: workflow_dispatch
+defaults:
+  run:
+    working-directory: ./
+
+jobs:
+  loan_approval_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+          
+      - name: install python packages
+        run:
+          pip install -r requirements.txt
+          
+      - name: do prediction and give results
+        env: 
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python ./inference.py
