@@ -24,4 +24,5 @@ jobs:
       - name: do prediction and give results
         env: 
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: python ./inference.py
