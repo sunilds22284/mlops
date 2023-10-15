@@ -9,3 +9,5 @@ hsml
 hsfs[python]
 python-dotenv
 openpyxl
+re
+requests
