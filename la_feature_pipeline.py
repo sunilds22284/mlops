@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 import numpy as np
 
-df = pd.read_excel('https://github.com/sunilcristo/hopswork-test/raw/main/Data/Consumer_creditworthiness_train_data.xlsx')
+df = pd.read_excel('https://github.com/sunilds22284/mlops/raw/main/Data/Consumer_creditworthiness_train_data.xlsx')
 
 df.head()
 
