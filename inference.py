@@ -152,6 +152,33 @@ headers = {
     "Authorization": f"token {access_token}",
 }
 
+# URL to check if the file exists
+url = f'https://api.github.com/repos/{username}/{repo_name}/contents/{f_path}'
+
+# Headers for authorization
+headers_1 = {
+    'Authorization': f'token {access_token}',
+    'Accept': 'application/vnd.github.v3+json'
+}
+
+# Send a GET request to check if the file exists
+response = requests.get(api_url, headers=headers)
+
+if response.status_code == 200:
+    file_info = response.json()
+    delete_url = file_info['api_url']
+
+    # Send a DELETE request to delete the file
+    delete_response = requests.delete(delete_url, headers=headers_1)
+
+    if delete_response.status_code == 200:
+        print(f'File {f_path} has been deleted from the repository.')
+    else:
+        print(f'Failed to delete the file. Status code: {delete_response.status_code}')
+else:
+    print(f'File {f_path} does not exist in the repository.')
+
+
 # Send a PUT request to create the file
 response = requests.put(api_url, headers=headers, json=data)
 
