@@ -152,26 +152,38 @@ headers = {
     "Authorization": f"token {access_token}",
 }
 
-# Headers for authorization
-headers_1 = {
-    'Authorization': f'token {access_token}',
-    'Accept': 'application/vnd.github.v3+json'
-}
-
 # Send a GET request to check if the file exists
 response = requests.get(api_url, headers=headers)
 
 if response.status_code == 200:
     file_info = response.json()
     delete_url = api_url
+    if 'sha' in file_info:
+        sha = file_info['sha']
+
+        # Create a message for the commit
+        commit_message = 'Delete results.csv'
+
+        # Prepare data for the delete request
+        delete_data = {
+            'message': commit_message,
+            'sha': sha
+        }
+
+        delete_headers = {
+            'Authorization': f'token {access_token}',
+            'Accept': 'application/vnd.github.v3+json'
+        }
 
     # Send a DELETE request to delete the file
-    delete_response = requests.delete(delete_url, headers=headers_1)
+        delete_response = requests.delete(delete_url, delete_headers, json=delete_data)
 
-    if delete_response.status_code == 200:
-        print(f'File {f_path} has been deleted from the repository.')
-    else:
-        print(f'Failed to delete the file. Status code: {delete_response.status_code}')
+        if delete_response.status_code == 200:
+             print(f'File {f_path} has been deleted from the repository.')
+        else:
+             print(f'Failed to delete the file. Status code: {delete_response.status_code}')
+     else:
+             print(f'File {file_path} does not exist in the repository.')
 else:
     print(f'File {f_path} does not exist in the repository.')
 
