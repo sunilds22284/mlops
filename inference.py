@@ -179,11 +179,11 @@ if response.status_code == 200:
         delete_response = requests.delete(delete_url, delete_headers, json=delete_data)
 
         if delete_response.status_code == 200:
-             print(f'File {f_path} has been deleted from the repository.')
+            print(f'File {f_path} has been deleted from the repository.')
         else:
-             print(f'Failed to delete the file. Status code: {delete_response.status_code}')
-     else:
-             print(f'File {file_path} does not exist in the repository.')
+            print(f'Failed to delete the file. Status code: {delete_response.status_code}')
+    else:
+            print(f'File {file_path} does not exist in the repository.')
 else:
     print(f'File {f_path} does not exist in the repository.')
 
