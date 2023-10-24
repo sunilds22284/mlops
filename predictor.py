@@ -13,7 +13,7 @@ class Predict(object):
         self.fs = fs_conn.get_feature_store()
 
         # get feature view
-        self.fv = self.fs.get_feature_view("loan_approval_feature_view", 1)
+        self.fv = self.fs.get_feature_view("loan_approval_feature_view", 3)
 
         # initialize serving
         self.fv.init_serving(0.5)
