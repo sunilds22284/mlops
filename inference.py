@@ -176,7 +176,7 @@ if response.status_code == 200:
         }
 
     # Send a DELETE request to delete the file
-        delete_response = requests.delete(delete_url, delete_headers, json=delete_data)
+        delete_response = requests.request('DELETE', delete_url, delete_headers, json=delete_data)
 
         if delete_response.status_code == 200:
             print(f'File {f_path} has been deleted from the repository.')
