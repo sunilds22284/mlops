@@ -153,7 +153,7 @@ headers = {
 }
 
 # URL to check if the file exists
-url = f'https://api.github.com/repos/{username}/{repo_name}/contents/{f_path}'
+url = f'https://api.github.com/repos/{username}/{repository}/contents/{f_path}'
 
 # Headers for authorization
 headers_1 = {
