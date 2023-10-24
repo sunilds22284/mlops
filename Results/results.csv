@@ -1,0 +1,94 @@
+,Loan_ID,Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area,Loan_Status
+0,788264,Male,No,0,Graduate,No,562500,0,110000,360,1.0,Semiurban,1
+1,431937,Male,Yes,3+,Graduate,Yes,1277325,320400,200000,360,1.0,Rural,1
+2,425437,Male,Yes,2,Graduate,Yes,1788300,1612350,960000,360,1.0,Rural,1
+3,938101,Male,No,0,Graduate,No,1053000,469575,0,360,1.0,Semiurban,1
+4,180559,Male,Yes,2,Graduate,Yes,3937500,0,800000,360,1.0,Rural,1
+5,204882,Male,Yes,0,Graduate,No,849375,0,220000,360,1.0,Semiurban,1
+6,420161,Male,Yes,1,Not Graduate,No,1189125,321750,322000,360,0.0,Semiurban,0
+7,741890,Male,No,1,Not Graduate,No,602775,292950,188000,360,1.0,Semiurban,1
+8,787062,Male,No,0,Not Graduate,No,1526175,0,260000,360,1.0,Semiurban,1
+9,955938,Male,Yes,0,Graduate,No,230625,1237500,432000,360,,Rural,1
+10,100859,Male,Yes,3+,Graduate,No,963225,0,200000,360,1.0,Urban,1
+11,630574,Male,No,2,Graduate,No,807300,0,220000,360,0.0,Rural,0
+12,963672,Male,No,1,Graduate,No,2531250,0,392000,360,,Semiurban,1
+13,391842,Female,No,0,Not Graduate,Yes,4087125,0,250000,360,1.0,Urban,1
+14,519229,Male,No,0,Not Graduate,,573750,459450,252000,360,1.0,Rural,1
+15,209260,Male,Yes,0,Graduate,No,1379925,878850,648000,360,1.0,Urban,1
+16,966823,Male,No,2,Graduate,No,813825,0,214000,360,1.0,Semiurban,1
+17,243919,Male,Yes,0,Not Graduate,No,656325,120600,132000,360,1.0,Rural,1
+18,566128,Male,Yes,3+,Graduate,No,1443825,0,314000,180,1.0,Rural,1
+19,361797,Female,Yes,1,Graduate,No,1036800,640125,280000,180,1.0,Semiurban,1
+20,931378,Female,No,0,Graduate,No,481050,0,198000,360,0.0,Semiurban,0
+21,164805,Female,No,1,Graduate,,821700,0,190000,360,1.0,Semiurban,1
+22,243413,Male,Yes,1,Not Graduate,No,503775,567900,256000,360,1.0,Urban,1
+23,859361,Female,Yes,0,Not Graduate,No,678825,149175,204000,360,,Semiurban,1
+24,413203,Male,Yes,0,Graduate,No,622800,438750,310000,360,1.0,Rural,1
+25,124806,Male,No,0,Not Graduate,No,755550,0,160000,36,1.0,Semiurban,1
+26,981330,Male,No,0,Graduate,No,568350,401175,290000,360,1.0,Rural,1
+27,782977,Female,No,0,Graduate,No,1125000,0,206000,360,0.0,Semiurban,0
+28,411899,Male,Yes,0,Graduate,No,626625,453600,220000,360,1.0,Rural,1
+29,847223,Male,Yes,2,Graduate,Yes,1492425,0,0,360,0.0,Rural,0
+30,641542,Male,Yes,1,Not Graduate,No,560700,534375,0,360,1.0,Rural,1
+31,548465,Male,Yes,1,Graduate,No,749925,731250,316000,360,1.0,Urban,1
+32,588963,Male,Yes,0,Not Graduate,No,552150,524925,362000,360,0.0,Urban,0
+33,593159,Male,Yes,0,Graduate,No,808425,959850,264000,180,0.0,Rural,0
+34,140128,Male,Yes,1,Graduate,No,1230300,232200,52000,360,1.0,Semiurban,1
+35,980813,Female,No,0,Graduate,No,600075,365625,168000,360,,Urban,1
+36,699832,Male,Yes,3+,Graduate,Yes,2281275,0,520000,360,1.0,Semiurban,1
+37,318140,Male,Yes,0,Graduate,No,874575,600525,324000,360,1.0,Semiurban,1
+38,375163,Female,Yes,0,Graduate,No,940500,518850,364000,360,1.0,Semiurban,1
+39,483906,Male,Yes,2,Not Graduate,No,826875,54450,216000,360,1.0,Semiurban,1
+40,739788,Female,Yes,1,Graduate,Yes,4383900,0,1200000,360,1.0,Semiurban,1
+41,979934,Male,Yes,0,Graduate,No,1332675,462150,422000,360,1.0,Rural,1
+42,487107,Male,No,0,Not Graduate,Yes,1305000,0,264000,360,1.0,Semiurban,1
+43,255763,Male,Yes,2,Graduate,No,1979775,0,516000,360,0.0,Urban,0
+44,617594,Male,Yes,0,Not Graduate,No,1005075,0,240000,360,,Rural,1
+45,532351,Male,No,0,Graduate,No,749925,0,140000,360,1.0,Urban,1
+46,313171,Male,Yes,3+,Graduate,No,765000,562500,246000,360,0.0,Rural,0
+47,381034,Female,No,0,Graduate,No,535050,0,18000,360,1.0,Urban,1
+48,128813,Male,Yes,0,Graduate,No,712350,464400,208000,360,0.0,Urban,0
+49,469056,Male,Yes,1,Graduate,No,768825,393750,372000,360,1.0,Urban,1
+50,473756,Male,Yes,,Graduate,No,1151100,326475,330000,360,0.0,Urban,0
+51,126755,Male,Yes,2,Graduate,No,3749850,0,550000,360,1.0,Urban,1
+52,804998,Male,Yes,2,Not Graduate,No,1378125,365625,374000,480,1.0,Semiurban,1
+53,936852,Male,Yes,3+,Graduate,No,1441350,0,300000,360,1.0,Semiurban,1
+54,996592,Male,Yes,2,Graduate,No,710775,103725,216000,84,1.0,Urban,1
+55,459340,,Yes,0,Graduate,No,694575,497250,272000,360,0.0,Semiurban,0
+56,654803,Male,No,0,Graduate,No,726525,616275,220000,360,1.0,Urban,1
+57,950784,Male,Yes,1,Graduate,No,400950,502200,214000,360,1.0,Rural,1
+58,408334,Male,No,0,Graduate,,715950,656325,322000,360,1.0,Urban,1
+59,460169,Male,Yes,2,Graduate,No,1471500,0,410000,360,1.0,Semiurban,1
+60,292849,Male,No,0,Graduate,No,413100,7613325,180000,360,1.0,Urban,1
+61,530366,Female,Yes,0,Graduate,No,712350,0,72000,360,1.0,Semiurban,1
+62,329130,Male,Yes,1,Graduate,No,423000,0,122000,360,,Rural,1
+63,605193,Male,Yes,1,Graduate,No,627075,431325,292000,360,0.0,Rural,0
+64,447386,Male,Yes,1,Graduate,No,963675,675000,344000,84,1.0,Rural,1
+65,565001,Male,Yes,0,Graduate,No,516825,342450,208000,360,1.0,Urban,1
+66,432456,Female,No,0,Not Graduate,No,487125,0,140000,360,1.0,Semiurban,1
+67,281822,,No,0,Graduate,No,1068750,0,188000,360,1.0,Semiurban,1
+68,143644,Male,Yes,2,Graduate,Yes,613350,0,212000,360,0.0,Semiurban,0
+69,698776,Male,Yes,0,Graduate,No,675000,768600,112000,180,1.0,Semiurban,1
+70,745929,Male,Yes,2,Graduate,Yes,1350000,0,410000,240,1.0,Semiurban,1
+71,298406,,No,3+,Graduate,Yes,2105325,0,584000,360,1.0,Semiurban,1
+72,314739,Male,Yes,0,Graduate,No,868275,742500,284000,180,1.0,Rural,1
+73,717001,Male,Yes,0,Graduate,Yes,3627000,0,520000,360,1.0,Urban,1
+74,242801,Male,No,0,Not Graduate,No,862425,0,220000,360,1.0,Rural,1
+75,172106,Male,Yes,2,Not Graduate,Yes,1436175,225000,374000,360,1.0,Rural,1
+76,345731,Male,No,,Graduate,No,672075,0,176000,360,0.0,Semiurban,0
+77,101769,Male,Yes,0,Graduate,Yes,2241675,0,360000,360,1.0,Rural,1
+78,655090,Male,Yes,2,Graduate,No,1300500,0,384000,360,1.0,Urban,1
+79,153131,Female,No,3+,Graduate,,93600,9375075,700000,180,,Urban,1
+80,819528,Male,Yes,0,Not Graduate,,651150,628200,310000,360,1.0,Rural,1
+81,753630,Male,Yes,3+,Graduate,No,1283175,0,256000,360,1.0,Urban,1
+82,553985,Male,No,0,Graduate,No,827100,967725,344000,360,1.0,Rural,1
+83,862622,Female,Yes,1,Graduate,No,2700000,0,992000,360,1.0,Semiurban,1
+84,822173,Male,Yes,0,Not Graduate,No,540000,855000,0,180,1.0,Urban,1
+85,858831,Male,Yes,1,Graduate,No,765000,562500,346000,360,1.0,Semiurban,1
+86,151918,Male,Yes,2,Not Graduate,No,897075,317475,314000,360,1.0,Rural,1
+87,994900,Male,Yes,0,Graduate,No,727200,438750,216000,360,1.0,Rural,1
+88,745846,Female,No,0,Graduate,No,652500,0,142000,360,1.0,Rural,1
+89,632570,Male,Yes,3+,Graduate,No,923850,0,80000,180,1.0,Rural,1
+90,320705,Male,Yes,1,Graduate,No,1816200,54000,506000,360,1.0,Urban,1
+91,333950,Male,Yes,2,Graduate,No,1706175,0,374000,360,1.0,Urban,1
+92,458928,Female,No,0,Graduate,Yes,1031175,0,266000,360,0.0,Semiurban,0
