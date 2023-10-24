@@ -152,9 +152,6 @@ headers = {
     "Authorization": f"token {access_token}",
 }
 
-# URL to check if the file exists
-url = f'https://api.github.com/repos/{username}/{repository}/contents/{f_path}'
-
 # Headers for authorization
 headers_1 = {
     'Authorization': f'token {access_token}',
@@ -166,7 +163,7 @@ response = requests.get(api_url, headers=headers)
 
 if response.status_code == 200:
     file_info = response.json()
-    delete_url = file_info['api_url']
+    delete_url = api_url
 
     # Send a DELETE request to delete the file
     delete_response = requests.delete(delete_url, headers=headers_1)
