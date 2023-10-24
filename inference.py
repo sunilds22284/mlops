@@ -25,7 +25,7 @@ project = hopsworks.login()
 import pandas as pd
 import numpy as np
 
-df_orig = pd.read_excel('https://github.com/sunilcristo/hopswork-test/raw/main/Data/Consumer_creditworthiness_test_data.xlsx')
+df_orig = pd.read_excel('https://github.com/sunilds22284/mlops/raw/main/Data/Consumer_creditworthiness_test_data.xlsx')
 list_orig_df = []
 list_orig_df = df_orig.values.tolist()
 
@@ -126,8 +126,8 @@ github_token = os.environ.get('GH_TOKEN')
 
 # Set your GitHub access token and repository information
 access_token = github_token
-username = "sunilcristo"
-repository = "hopswork-test"
+username = "sunilds22284"
+repository = "mlops"
 file_path = csv_file_path
 f_path = "Results/results.csv"
 commit_message = "Add results.csv"  # Commit message
